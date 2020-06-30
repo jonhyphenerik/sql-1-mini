@@ -1,0 +1,47 @@
+1. avg length of all tracks in milliseconds
+-- select avg(milliseconds) from track
+
+2. Find the number of invoices in the USA
+-- select * from invoice
+-- where billing_country = 'USA';
+
+3. Make a list of all the First Names of Customers that contain an 'a'
+-- select first_name from customer
+-- where first_name like '%a%'
+-- or first_name like '%A%'
+
+4. Make a list of the 10 longest tracks
+-- select * from track
+-- order by milliseconds desc
+-- limit 10
+
+5. Make a list of the 20 shortest tracks
+-- select * from track
+-- order by milliseconds asc
+-- limit 20
+
+6. Find all the customers that live in California or Washington
+-- select * from customer
+-- where state = 'CA' 
+-- or state = 'WA';
+
+7. Find all the customers that live in California, Washington, Utah, Florida, or Arizona (Use IN keyword)
+-- select * from customer
+-- where state in ('CA','WA','UT','FL', 'AZ')
+
+8. Insert an artist to the database
+-- insert into artist
+-- (name)
+-- values
+-- ('Tyler the Creator')
+
+9. Insert yourself as a customer to the database
+-- insert into customer
+-- (first_name, last_name, email)
+-- values
+-- ('Jon-Erik', 'Nissen', 'jenissen@me.com')
+
+10. Find a list of all Playlists that start with Classical
+-- select *
+-- from playlist
+-- where name like 'Classical%'
